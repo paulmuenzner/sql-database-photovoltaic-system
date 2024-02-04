@@ -45,7 +45,7 @@
   <summary>Table of Contents</summary>
   <ol>
     <li><a href="#about-the-project">About The Project</a></li>
-    <li><a href="#functional-requirements">Functional Requirements</a></li>
+    <li><a href="#purposes">Purposes</a></li>
     <li><a href="#representation">Representation</a></li>
     <li><a href="#limitations">Limitations</a></li>
     <li><a href="#indexes">Indexes</a></li>
@@ -67,6 +67,7 @@ The database contains essential relations that model the structure and connectio
 
 In addition to static information, the database allows to logs real-time values that provide critical insights into the system's operation. This includes data on state of battery charge, irradiance levels, voltage and current input and output of the inverter. Real-time monitoring of these parameters allows for immediate assessment of system performance, detection of potential issues, and timely interventions to optimize efficiency and maximize energy production.
 
+Click to enlarge
 ![My Image](documentation/pv-grid-block-diagram_paul-muenzner.png)
 
 The database's role extends beyond real-time monitoring to historical data storage. It keeps records of past performance and system events. Analyzing historical data can uncover patterns, trends, and irregularities in system behavior, facilitating predictive maintenance, performance forecasting, and identifying areas for improvement. Moreover, the database facilitates reporting and analysis, generating meaningful insights through queries, reports, and data visualization. This aids stakeholders in understanding the PV system's overall performance, optimizing battery usage, and planning for system expansions or upgrades.
@@ -77,17 +78,12 @@ The database can hold all the afore-mentioned information for any number of phot
 
 It should be noted, however, that this design does not claim to be complete. It does, however, provide an understanding of key components and the operation of PV systems that feed energy into the grid or store it temporarily in batteries. Possible other components, such as a vault rapid shutdown, surge protection devices, energy meter or residual current circuit breakers, have been omitted for the sake of clarity. Please be aware that this database is not fully ready for immediate implementation, as the requirements of each system can vary. Consider it as a foundational resource and guide, offering a starting point and orientation tailored to meet your specific needs.
 
-This SQL database encompasses information about various devices within a photovoltaic system:
--   Each independent photovoltaic system is represented by a distinct entry in the 'pv_systems' table.
--   Multiple solar panel arrays can be associated with a single photovoltaic system, and each solar panel array is exclusively linked to a specific photovoltaic system.
--   Each photovoltaic system is equipped with a battery of variable size, serving the purpose of storing or extracting energy.
--   The 'log_status_pv_system_minutes' table acts as a data logger, storing critical, time-dependent, and dynamically changing measured values at minute intervals.
--   Product listing tables, such as those for solar panel products, PV combiner boxes, solar charge controllers, and inverters, facilitate the definition of all installed components for each panel array. This allows for the generation of an equipment overview sorted by panel array and PV system.
 
+## Purposes
 
-## Functional Requirements
+A user interacting with a database for a photovoltaic (PV) system can retrieve detailed technical parameter of implemented components and should be able to perform various tasks and actions that are essential for monitoring, managing, and optimizing the performance of the PV system. 
 
-A user interacting with a database for a photovoltaic (PV) system can retrieve detailed technical parameter of implemented components and should be able to perform various tasks and actions that are essential for monitoring, managing, and optimizing the performance of the PV system. Here are some broader key actions a user should be able to undertake:
+Here are several overarching, essential functionalities that users should be able to accomplish, each designed to serve specific purposes, use cases, and achieve valuable outcomes::
 
 1. **Monitor Real-Time Data:**
    - View real-time values of key parameters such as irradiance, battery charge state, power input/output, and more.
@@ -121,6 +117,14 @@ A user interacting with a database for a photovoltaic (PV) system can retrieve d
 <!-- Representation -->
 ## Representation
 
+This SQL database encompasses information about various devices within a photovoltaic system:
+-   Each independent photovoltaic system is represented by a distinct entry in the 'pv_systems' table.
+-   Multiple solar panel arrays can be associated with a single photovoltaic system, and each solar panel array is exclusively linked to a specific photovoltaic system.
+-   Each photovoltaic system is equipped with a battery of variable size, serving the purpose of storing or extracting energy.
+-   The 'log_status_pv_system_minutes' table acts as a data logger, storing critical, time-dependent, and dynamically changing measured values at minute intervals.
+-   Product listing tables, such as those for solar panel products, PV combiner boxes, solar charge controllers, and inverters, facilitate the definition of all installed components for each panel array. This allows for the generation of an equipment overview sorted by panel array and PV system.
+
+Click to enlarge
 ![ERD](documentation/erd_pv-system_paul-muenzner.png)
 
 ### Relationships
@@ -167,16 +171,6 @@ Linking is realized with primary keys in each table and foreign additional keys 
 
 More details on attributes of each table can be found in the entity relationship diagram or the script itself. Listing all and each attribute would go beyond the scope of this article and not yield any additional information.
 
-### Constraints
-Constraints in a database schema model, as described in the database for the photovoltaic (PV) system, are crucial for ensuring data integrity, enforcing business rules, maintaining consistency, and preventing erroneous or invalid data from entering the database. Constraints help maintain data integrity by ensuring that only valid and appropriate data is inserted into the database. This includes enforcing rules on data types, null values, and range of allowed values for attributes. Many floating number values are limited to a certain size with a certain or maximum number of fractional digits in order to increase readability and reduce the amount of data storage.
-
-Constraints like foreign keys maintain referential integrity by ensuring that relationships between entities are valid. For example, a foreign key linking a panel array to a PV system ensures that the panel array is associated with an existing PV system.
-
-Constraints maintain consistency by enforcing rules that the data must follow. For instance, a constraint can ensure that every panel in the panel_arrays table must have a valid corresponding entry in the specifications_panel_products table.
-
-By enforcing constraints, you can prevent redundancy and inconsistencies in the data. For instance, constraints can ensure that a PV system's inverter is properly linked to an existing inverter specification. The same converter with its specifications can be linked to other pv systems where it might be used too.
-
-Constraints help prevent and detect errors at the database level, providing an early warning system for potential issues before they impact the system or application. For example, it does not make sense to add any device in a table as new row without its installation date.
 
 ## Limitations
 The database for the photovoltaic (PV) system focuses on storing and managing information related to system components, real-time data, historical performance, and operational parameters. However, it does not handle aspects beyond this scope, such as:
