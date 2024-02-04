@@ -45,12 +45,14 @@
   <summary>Table of Contents</summary>
   <ol>
     <li><a href="#about-the-project">About The Project</a></li>
-    <li><a href="#getting-started">Getting Started</a></li>
+    <li><a href="#functional-requirements">Functional Requirements</a></li>
+    <li><a href="#representation">Representation</a></li>
+    <li><a href="#limitations">Limitations</a></li>
+    <li><a href="#indexes">Indexes</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
@@ -65,7 +67,7 @@ The database contains essential relations that model the structure and connectio
 
 In addition to static information, the database allows to logs real-time values that provide critical insights into the system's operation. This includes data on state of battery charge, irradiance levels, voltage and current input and output of the inverter. Real-time monitoring of these parameters allows for immediate assessment of system performance, detection of potential issues, and timely interventions to optimize efficiency and maximize energy production.
 
-![My Image](documentation\pv-grid-block-diagram_paul-muenzner.png)
+![My Image](documentation/pv-grid-block-diagram_paul-muenzner.png)
 
 The database's role extends beyond real-time monitoring to historical data storage. It keeps records of past performance and system events. Analyzing historical data can uncover patterns, trends, and irregularities in system behavior, facilitating predictive maintenance, performance forecasting, and identifying areas for improvement. Moreover, the database facilitates reporting and analysis, generating meaningful insights through queries, reports, and data visualization. This aids stakeholders in understanding the PV system's overall performance, optimizing battery usage, and planning for system expansions or upgrades.
 
@@ -119,7 +121,7 @@ A user interacting with a database for a photovoltaic (PV) system can retrieve d
 <!-- Representation -->
 ## Representation
 
-![ERD](documentation\erd_pv-system_paul-muenzner.png)
+![ERD](documentation/erd_pv-system_paul-muenzner.png)
 
 ### Relationships
 
