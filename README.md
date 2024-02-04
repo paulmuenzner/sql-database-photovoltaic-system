@@ -5,12 +5,11 @@
 <!--
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-<!-- [![Golang][golang-shield]][golang-url] -->
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/7003be3d0ea5476e98760cb305c2b424)](https://app.codacy.com/gh/paulmuenzner/sql-database-photovoltaic-systems/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 [![Issues][issues-shield]][issues-url]
 ![MySQL](https://img.shields.io/badge/MySQL-00000F?logo=mysql&logoColor=white)
 [![GNU License][license-shield]][license-url]
-![GitHub repo size](https://img.shields.io/github/repo-size/paulmuenzner/sql-database-photovoltaic-systems)
-![GitHub top language](https://img.shields.io/github/languages/top/paulmuenzner/sql-database-photovoltaic-systems)
+<!-- ![GitHub repo size](https://img.shields.io/github/repo-size/paulmuenzner/sql-database-photovoltaic-systems) -->
 [![paulmuenzner github][github-shield]][github-url] 
 [![Contributors][contributors-shield]][contributors-url]
  <!-- [![paulmuenzner.com][website-shield]][website-url] -->
@@ -21,7 +20,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/paulmuenzner/sql-database-photovoltaic-systems">
-    <img src="documentation\logo-mysql-photovoltaic-system.png" alt="Logo" width="300" height="200">
+    <img src="documentation/logo-mysql-photovoltaic-system.png" alt="Logo" width="300" height="200">
   </a>
 
   <h3 align="center">MySQL Database Photovoltaic Systems</h3>
