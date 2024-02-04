@@ -67,8 +67,8 @@ The database contains essential relations that model the structure and connectio
 
 In addition to static information, the database allows to logs real-time values that provide critical insights into the system's operation. This includes data on state of battery charge, irradiance levels, voltage and current input and output of the inverter. Real-time monitoring of these parameters allows for immediate assessment of system performance, detection of potential issues, and timely interventions to optimize efficiency and maximize energy production.
 
-Click to enlarge
 ![My Image](documentation/pv-grid-block-diagram_paul-muenzner.png)
+Click to enlarge
 
 The database's role extends beyond real-time monitoring to historical data storage. It keeps records of past performance and system events. Analyzing historical data can uncover patterns, trends, and irregularities in system behavior, facilitating predictive maintenance, performance forecasting, and identifying areas for improvement. Moreover, the database facilitates reporting and analysis, generating meaningful insights through queries, reports, and data visualization. This aids stakeholders in understanding the PV system's overall performance, optimizing battery usage, and planning for system expansions or upgrades.
 
@@ -124,8 +124,8 @@ This SQL database encompasses information about various devices within a photovo
 -   The 'log_status_pv_system_minutes' table acts as a data logger, storing critical, time-dependent, and dynamically changing measured values at minute intervals.
 -   Product listing tables, such as those for solar panel products, PV combiner boxes, solar charge controllers, and inverters, facilitate the definition of all installed components for each panel array. This allows for the generation of an equipment overview sorted by panel array and PV system.
 
-Click to enlarge
 ![ERD](documentation/erd_pv-system_paul-muenzner.png)
+Click to enlarge
 
 ### Relationships
 
@@ -284,7 +284,7 @@ Distributed under the GNU General Public License v2.0. See [LICENSE](LICENSE.txt
 
 Paul Münzner: [https://paulmuenzner.com](https://paulmuenzner.com) 
 
-Project Link: [https://github.com/paulmuenzner/powerplantmanager](https://github.com/paulmuenzner/sql-database-photovoltaic-systems)
+Project Link: [https://github.com/paulmuenzner/sql-database-photovoltaic-systems](https://github.com/paulmuenzner/sql-database-photovoltaic-systems)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
