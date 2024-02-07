@@ -296,6 +296,6 @@ Project Link: [https://github.com/paulmuenzner/sql-database-photovoltaic-systems
 [issues-shield]: https://img.shields.io/github/issues/paulmuenzner/sql-database-photovoltaic-systems.svg
 [issues-url]: https://github.com/paulmuenzner/sql-database-photovoltaic-systems/issues
 [github-shield]: https://img.shields.io/badge/paulmuenzner-black.svg?logo=github&logoColor=ffffff&colorB=000000
-[github-url]: https://github.com/paulmuenzner
+[github-url]: https://github.com/paulmuenzner?tab=repositories
 [contributors-shield]: https://img.shields.io/github/contributors/paulmuenzner/sql-database-photovoltaic-systems.svg
 [contributors-url]: https://github.com/paulmuenzner/sql-database-photovoltaic-systems/graphs/contributors
