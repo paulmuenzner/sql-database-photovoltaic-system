@@ -20,7 +20,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/paulmuenzner/sql-database-photovoltaic-systems">
-    <img src="documentation/logo-mysql-photovoltaic-system.png" alt="Logo" width="300" height="200">
+    <img src="documentation/logo-mysql-photovoltaic-system.png" alt="Logo" width="240" height="160">
   </a>
 
   <h3 align="center">MySQL Database Photovoltaic Systems</h3>
@@ -37,7 +37,8 @@
   </p>
 </div>
 
-
+<!-- HEADER -->
+![Header](documentation/mysql-database-design-photovoltaic-systems.png)
 
 <!-- TABLE OF CONTENTS -->
 <details>
